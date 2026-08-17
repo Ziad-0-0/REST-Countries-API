@@ -1,0 +1,122 @@
+.search {
+    margin: 50px 0;
+}
+
+.search .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search input {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+main.dark .search input {
+    background-color: var(--dark-elements);
+    color: var(--dark-text);
+}
+
+main.dark .search input::placeholder {
+    color: var(--dark-text);
+}
+
+main.light .search input {
+    background-color: var(--light-elements);
+    color: var(--light-text);
+}
+main.light .search input::placeholder {
+    color: var(--light-text);
+}
+
+main.dark .search .drop-dawn button {
+    background-color: var(--dark-elements);
+    color: var(--dark-text);
+}
+
+main.light .search .drop-dawn button {
+    background-color: var(--light-elements);
+    color: var(--light-text);
+}
+
+.search .drop-dawn button {
+    width: 200px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.drop-dawn {
+    position: relative;
+}
+
+.drop-dawn .menu {
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 9999999999;
+    transition: 0.3s;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+main.dark .search .drop-dawn .menu {
+    background-color: var(--dark-elements);
+    color: var(--dark-text);
+}
+main.light .search .drop-dawn .menu {
+    background-color: var(--light-elements);
+    color: var(--light-text);
+}
+.drop-dawn .menu li {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px;
+    cursor: pointer;
+}
+
+main.dark .search .drop-dawn .menu li:hover {
+    background-color: var(--dark-bg);
+}
+
+main.light .search .drop-dawn .menu li:hover {
+    background-color: var(--light-bg);
+}
+.drop-dawn .menu li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+    .search .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

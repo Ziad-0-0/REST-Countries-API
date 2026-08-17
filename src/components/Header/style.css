@@ -1,0 +1,46 @@
+main.dark header {
+    background-color: var(--dark-elements);
+}
+main.light header {
+    background-color: var(--light-elements);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+main.dark header h1 {
+    color: var(--dark-text);
+}
+
+main.light header h1 {
+    color: var(--light-text);
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+main.dark header button {
+    color: var(--dark-text);
+}
+
+main.light header button {
+    color: var(--light-text);
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+}
